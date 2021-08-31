@@ -21,7 +21,7 @@ html {
 }
 
 .body{
-    color: rgb(255, 220, 220);
+    color: white;
 }
 
 .heading {
@@ -68,5 +68,9 @@ footer{
 
 main{
     margin: auto;
+    width: 90vw;
+}
+
+img{
     width: 90vw;
 }
