@@ -40,13 +40,13 @@ header{
     align-items: center;
 }
 
-a{
+.nav-link, #back-to-top{
     color: white;
     text-decoration: underline;
     text-decoration-color:orange;
     transition: .7s;
 }
-a:hover{
+.nav-link:hover, #back-to-top:hover{
     color: orange;
     text-decoration-color:white;
 }
@@ -56,9 +56,7 @@ nav{
     justify-content: space-evenly;
     flex-direction: row;
     width: 100vw;
-    margin-top: 2%;
-}
-.nav-link{
+    margin-top: 3%;
 }
 
 footer{
@@ -68,9 +66,25 @@ footer{
 
 main{
     margin: auto;
-    width: 90vw;
+    width: 80vw;
+}
+
+.footer-image-link, .footer-section{
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.icon{
+    color: rgb(45, 43, 43);
+    transition: 1s ease;
+    display: inline-block;
+}
+.icon:hover{
+    color: white;
+    transition: 1s ease;
 }
 
 img{
-    width: 90vw;
+    max-width: 32px;
+    max-height: 32px;
 }
