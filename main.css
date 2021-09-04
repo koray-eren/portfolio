@@ -6,8 +6,8 @@
 }
 
 html {
+    color: orange;
     background:rgb(45, 43, 43);
-    color:orange;
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     box-sizing: border-box;
 }
@@ -20,13 +20,20 @@ html {
     text-align: center;
 }
 
-.body{
-    color: white;
+.row-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-.heading {
-    color: orange;
-}
+
+.body{
+    color: white;
+    font-size: 1rem;
+}  
 
 h2{
     margin-bottom: 2%;
@@ -40,22 +47,26 @@ header{
     align-items: center;
 }
 
-.nav-link, #back-to-top{
+.nav-link, #back-to-top, .body-link{
     color: white;
     text-decoration: underline;
     text-decoration-color:orange;
     transition: .7s;
 }
-.nav-link:hover, #back-to-top:hover{
+.nav-link:hover, #back-to-top:hover, .body-link:hover{
     color: orange;
     text-decoration-color:white;
+}
+
+.body-link{
+    padding-top: .5rem;
 }
 
 nav{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    width: 100vw;
+    width: 90vw;
     margin-top: 3%;
 }
 
@@ -66,7 +77,6 @@ footer{
 
 main{
     margin: auto;
-    width: 80vw;
 }
 
 .footer-image-link, .footer-section{
@@ -84,7 +94,36 @@ main{
     transition: 1s ease;
 }
 
-img{
-    max-width: 32px;
-    max-height: 32px;
+li{
+    list-style-type: disc;
+    text-align: center;
+    list-style: inside;
+    margin: .3rem .5rem 0 .5rem;
+}
+
+a{
+    color: white;
+}
+
+.skill-logo{
+    margin: .3rem;
+}
+
+@media screen and (min-width: 801px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    main{
+        width: 70vw;
+    }
+    nav{
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+    .body {
+      font-size: 1.5rem;
+    }
 }
