@@ -115,23 +115,31 @@ a{
 
 input, textarea{
     margin: 3%;
-    width: 30vw;
+    width: 70vw;
 }
 
 textarea{
     height: 10vw;
 }
 
-.blog-post{
-    margin-top: 3rem;
+.blog-post-preview{
+    margin-top: 2rem;
     max-width: 80vw;
     display: flex;
     flex-direction: column;
+}
+.blog-post-preview img{
+    max-width: 50%;
+    margin: 2%;
 }
 
 .blog-body{
     margin: 1rem;
     width: 80vw;
+}
+
+.blog-post-image{
+    max-width: 90vw;
 }
 
 @media screen and (min-width: 801px) {
@@ -159,4 +167,21 @@ textarea{
     footer{
         margin-top: 5%;
     }
+    .blog-post-preview{
+        margin-top: 3rem;
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-post-preview img{
+        max-width: 25%;
+        margin: 2%;
+    }
+    .blog-post-preview p{
+        max-width: 65%;
+    }
+    input, textarea{
+        width: 30vw;
+    }
+    
 }
