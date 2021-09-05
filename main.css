@@ -104,6 +104,14 @@ li{
 a{
     color: white;
 }
+.project-heading{
+    color: orange;
+    text-decoration-color: white;
+}
+.project-heading:hover{
+    color: white;
+    text-decoration-color: orange;
+}
 
 .skill-logo{
     margin: .3rem;
@@ -122,14 +130,21 @@ textarea{
     height: 10vw;
 }
 
-.blog-post-preview{
+.blog-post-preview, .project{
     margin-top: 2rem;
     max-width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .blog-post-preview img{
     max-width: 50%;
+    margin: 2%;
+}
+
+.project img{
+    max-width: 10%;
     margin: 2%;
 }
 
@@ -140,6 +155,12 @@ textarea{
 
 .blog-post-image{
     max-width: 90vw;
+}
+
+#overview-links-wrapper{
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media screen and (min-width: 801px) {
@@ -167,18 +188,18 @@ textarea{
     footer{
         margin-top: 5%;
     }
-    .blog-post-preview{
+    .blog-post-preview, .project{
         margin-top: 3rem;
-        max-width: 80vw;
-        display: flex;
-        flex-direction: column;
     }
-    .blog-post-preview img{
+    .blog-post-preview img, .project img{
         max-width: 25%;
         margin: 2%;
     }
-    .blog-post-preview p{
+    .blog-post-preview p, .project p{
         max-width: 65%;
+    }
+    .project p{
+        margin: 2%;
     }
     input, textarea{
         width: 30vw;
