@@ -10,6 +10,7 @@ html {
     background:rgb(45, 43, 43);
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     box-sizing: border-box;
+    overflow-y: scroll;
 }
 
 .wrapper{
@@ -138,6 +139,9 @@ textarea{
     justify-content: center;
     align-items: center;
 }
+.featured{
+    margin-top: 1rem;
+}
 .blog-post-preview img{
     max-width: 50%;
     margin: 2%;
@@ -159,9 +163,14 @@ textarea{
 
 #overview-links-wrapper{
     width: 80vw;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
+
+#overview-links-wrapper a{
+    margin: 2%;
+}
+
 
 @media screen and (min-width: 801px) {
     h1 {
@@ -174,6 +183,9 @@ textarea{
     }
     h3{
         font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.4rem;
     }
     main{
         width: 70vw;
@@ -203,6 +215,9 @@ textarea{
     }
     input, textarea{
         width: 30vw;
+    }
+    .featured{
+        margin-top:1rem
     }
     
 }
