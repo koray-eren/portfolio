@@ -11,6 +11,7 @@ html {
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     box-sizing: border-box;
     overflow-y: scroll;
+    width: 100vw;
 }
 
 .wrapper{
