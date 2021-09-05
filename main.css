@@ -109,12 +109,42 @@ a{
     margin: .3rem;
 }
 
+#github-contributions{
+    max-width: 90vw;
+}
+
+input, textarea{
+    margin: 3%;
+    width: 30vw;
+}
+
+textarea{
+    height: 10vw;
+}
+
+.blog-post{
+    margin-top: 3rem;
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-body{
+    margin: 1rem;
+    width: 80vw;
+}
+
 @media screen and (min-width: 801px) {
     h1 {
         font-size: 3rem;
     }
     h2 {
         font-size: 2rem;
+        margin-bottom: 1%;
+        margin-top: 4%;
+    }
+    h3{
+        font-size: 1.5rem;
     }
     main{
         width: 70vw;
@@ -125,5 +155,8 @@ a{
     }
     .body {
       font-size: 1.5rem;
+    }
+    footer{
+        margin-top: 5%;
     }
 }
